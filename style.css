@@ -1,0 +1,189 @@
+:root {
+    /* Primary */
+--Light-red: hsl(0, 100%, 67%); /* Reaction div */
+--Orangey-yellow: hsl(39, 100%, 56%); /* Memory div */
+--Green-teal: hsl(166, 100%, 37%); /* verbal div */
+--Cobalt-blue: hsl(234, 85%, 45%); /* visual div */
+
+/* ## Gradients */
+
+--Light-slate-blue-background: hsl(252, 100%, 67%);
+--Light-royal-blue-background: hsl(241, 81%, 54%);
+
+--Violet-blue-circle: hsla(256, 72%, 46%, 1);
+--Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+
+
+/* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%); /* card text */
+--Light-lavender: hsl(241, 100%, 89%); /* Container BG */
+--Dark-gray-blue: hsl(224, 30%, 27%); /* button */
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1440 px;
+    height: 1080 px;
+    background-color: var(--White);
+    font-family: 'Hanken Grotesk';
+}
+
+.container {
+    margin: 284px 352px;
+    width: 736px;
+    height: 512px;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    background-color: var(--White);
+    border-radius: 25px;
+    box-shadow: 5px 5px 20px 10px var(--Pale-blue);
+}
+
+.card {
+    width: 50%;
+    height: 100%;
+    background-image:  linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card h3 {
+    color: var(--Light-lavender);
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+.wrap {
+    width:184px;
+    height: 184px;
+    background-image:  linear-gradient(var(--Violet-blue-circle), var(--Persian-blue-circle));
+    border-radius: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+
+#number {
+    color: var(--Pale-blue);
+    font-weight: 800;
+    font-size: 4em;
+}
+
+.norm {
+    color: var(--Light-lavender);
+    font-weight: 700;
+}
+
+.card h1 {
+    color: var(--Pale-blue);
+    margin-bottom: -30px;
+}
+
+.card p.normal {
+    color: var(--Light-lavender);
+    font-weight: 700;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.summary {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.summary h2, .slice {    width: 77.7%;
+}
+
+.summary h2 {
+    color: var(--Dark-gray-blue);
+}
+
+.slice span {
+    color: var(--Dark-gray-blue);
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.slice {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.right-title {
+display: flex;
+}
+
+#reaction {
+    background-color: color-mix(in srgb, var(--Light-red), transparent 90%);
+    color: #adaaaa;
+    font-weight: 500;
+}
+
+#reaction h4{
+    color: var(--Light-red);
+}
+
+#memory {
+    background-color: color-mix(in srgb, var(--Orangey-yellow), transparent 90%);
+    color: #adaaaa;
+    font-weight: 500;
+}
+
+#memory h4{
+    color: var(--Orangey-yellow);
+}
+
+
+#verbal {
+    background-color: color-mix(in srgb, var(--Green-teal), transparent 90%);
+    color: #adaaaa;
+    font-weight: 500;
+}
+
+#verbal h4{
+    color: var(--Green-teal);
+}
+
+#visual {
+    background-color: color-mix(in srgb, var(--Cobalt-blue), transparent 90%);
+    color: #adaaaa;
+    font-weight: 500;
+}
+
+#visual h4{
+    color: var(--Cobalt-blue);
+}
+
+
+Button {
+    width: 77.7%;
+    background-color: var(--Dark-gray-blue);
+    color: var(--Pale-blue);
+    padding: 20px;
+    border-radius: 50px;
+    color: var(--Pale-blue);
+    font-weight: 700;
+    font-size: 1em;
+}
+
